@@ -123,7 +123,7 @@ section {
 
   /* logos de clientes */
   .contenido{
-    width: 85%;
+    width: 95%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -138,7 +138,7 @@ section {
     display: inline-block;
     padding: 25px 70px 25px 70px;
     margin: 2px;    
-    width: 300px;
+    width: 370px;
     max-height: 450px;
   }
   .contenido div{
