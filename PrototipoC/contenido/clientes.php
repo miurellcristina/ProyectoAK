@@ -11,9 +11,28 @@
                 <link rel="stylesheet" href="../recursos/css/font.css">
                 <link rel="icon" href="../recursos/img/favicon.ico">
                 <link rel="stylesheet" href="../recursos/css/menu.css">
+                <link rel="stylesheet" href="../recursos/css/contenido.css">
     </head>
     <body>
         <?php include '../recursos/php/encabezadologo.php';?>
+
+        <div class="contenido">
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/Bachoco.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/Cargill.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/cemex.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/Fortacero.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/jumex.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/moderna.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/NH3.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/Nutrigafer.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/PASA" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/Proconsa.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/SuKarne.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/TA.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/tecmed.png" alt=""></div>
+            <div ><img class="C-logo" src="../recursos/IMG/c-logos/CarnesSelectas.png" alt=""></div>
+        </div>
+
     </body>
     
 </html> 
