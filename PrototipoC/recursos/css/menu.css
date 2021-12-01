@@ -1,0 +1,86 @@
+/************************************** Menu**************************************/
+@font-face {
+  font-family: 'Lato';
+  src: url("../recursos/fonts/Lato-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url("../recursos/fonts/TitilliumWeb-Regular.ttf") format("truetype"); }
+  body{
+    font-family: "Lato", sans-serif;
+  }
+
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+   
+  }
+  
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100; 
+    background: #134b11;
+    padding: .65rem 0;
+  }  
+  
+  .header a {
+    background-color: #134b11;
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+    /************************* estilos para los elementos del menu *******************************/
+  .navigation ul {
+    min-width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navigation >ul >li {
+    display: inline-block;
+  }
+       
+  .submenu{
+      z-index: 100;
+      position:absolute;
+      display:none;
+  }
+  
+  .navigation >ul >li:hover > ul{
+      display:block;
+      position:flex;
+      min-width:140px;
+      z-index: 100;
+      background: #f2f2f2;
+      color: #a67a46ff;
+    }
+    .logomenu{
+      min-width: 200px;
+      min-height: 50px;
+      position: absolute; 
+      top: 0; 
+      left: 0;
+      padding-left: 5px;
+}
+
+      /*****************************  Cuando esten dentro del menu ********************************** */
+      .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s linear;
+      }
+      
+      .navigation ul li a:hover {
+          background: #f2f2f2;
+          color: #a67a46ff;
+          border-radius: 5px;
+      
+      }

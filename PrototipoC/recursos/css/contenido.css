@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("../recursos/fonts/Lato-Regular.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: 'Titillium Web';
+    src: url("../recursos/fonts/TitilliumWeb-Regular.ttf") format("truetype"); }
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #134b11;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #313131;
+    color: #f2f2f2;
+}
+
+.h1 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px #134b11;
+    width: 55%;
+    height: 50%;
+}
+
+/* Secciones */
+.ImagenInf{
+    width: 100%;
+    min-height: 500px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 100px 0px;
+    text-align: center;
+    box-shadow: 15px 15px 15px darkgrey ;
+    border: 2px solid #134b11;
+    background:url("../IMG/banner.png") no-repeat center;
+}
+
+.secciones{
+    margin: auto auto auto auto;
+    width: 60%;
+    padding-left: 50px;
+    font-size: 25px;   
+}
+section {
+    flex: none;
+    width: 70%;
+    margin:auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+
+/* botones fijos */
+.wrapper{
+    float:left;
+    position:fixed;
+    top:50%;
+	height:205px;
+	margin-top:-170px;
+}
+.wrapper .space{
+    padding-bottom: 20px;
+}
+.wrapper .space .button{
+    color: #134b11;
+    width: 150px;
+    margin-top: 20px;
+    display: block;
+    height: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    text-align: center;
+  }
+.buttonXL{
+    width: 220px !important;
+}
+
+
+.wrapper .space .button:nth-child(1):hover {
+    background: #a67a46ff;
+ }
+  
+.wrapper .space .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .space .button:nth-child(1):hover span{
+    color: #f2f2f2;
+  }
+  
