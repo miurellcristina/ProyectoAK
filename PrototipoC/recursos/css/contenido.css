@@ -62,7 +62,7 @@ body {
     padding-left: 50px;
     font-size: 25px;   
 }
-section {
+section{
     flex: none;
     width: 70%;
     margin:auto;
@@ -122,7 +122,7 @@ section {
   }
 
   /* logos de clientes */
-  .contenido{
+  .contenido {
     width: 95%;
     display: flex;
     flex-flow: row wrap;
@@ -134,7 +134,7 @@ section {
     justify-content: center;
     height: 100%;
   }
-  .C-logo{
+  .C-logo, .const{
     display: inline-block;
     padding: 25px 70px 25px 70px;
     margin: 2px;    
@@ -147,4 +147,4 @@ section {
   .contenido div:hover{
     transform: scale(2);
   }
- 
+  
