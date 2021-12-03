@@ -1,18 +1,5 @@
 <?php 
-//Conexion
-    $servername = "localhost";
-    $username = "Admin";
-    $password = "N7R1R0nD662IfuUG";
-    $dbname = "ak";
-                    
-    $con= mysqli_connect($servername, $username, $password, $dbname) or die ("No se pudo conectar");
-    mysqli_select_db ($con, $dbname) or die ("No se pudo seleccionar BD"); 
-    
-    if (!$con){
-		  echo "Error en coneccion: ".$mysqli_connect_error();
-		  exit;
-    }
-    
+include 'conexion.php';   
 /* Datos recibidos*/
 $destinatario = "rock.animefan@gmail.com"; 
 $nombre=$_POST["mombre"];
@@ -21,6 +8,16 @@ $tel=$_POST["tel"];
 $WS=$_POST["WS"];
 $mail=$_POST["mail"];
 $estado=$_POST["estado"];
+    $sql = "SELECT * FROM estados WHERE ID_entidad= $estado or estado= $estado";
+    if($resultado=mysqli_query($con,$sql)){
+        while($registro=mysqli_fetch_row($resultado)){
+            $estado=$registro[1];
+            $idestado=$registro[0];
+        }
+    }
+    else{
+            echo "No se pudo ejecutar la consulta a la BD";
+    }
 $ciudad=$_POST["ciudad"];
 $comentario=$_POST["comentario"];
 $contenido = "
@@ -37,7 +34,7 @@ $contenido = "
 if(mail($destinatario,"La empresa .$empresa. ha solicitado información adicional",$contenido )){
     if(!empty($_POST)){
         $sql="INSERT INTO `comentarios` (`nombre`, `empresa`, `tel`, `ws`, `mail`, `estado`, `ciudad`, `comentario`) 
-        VALUES ('.$nombre.', '.$empresa', '.$tel.', '.$WS.', '.$mail.', '.$estado.', '.$ciudad.', '.$comentario.');";
+        VALUES ('$nombre', '$empresa', $tel, $WS, '$mail', '$idestado', '$ciudad', '$comentario');";
         $accion=mysqli_query($con,$sql);
         
         if($accion){

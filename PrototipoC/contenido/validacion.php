@@ -90,8 +90,11 @@
                         </div>
                     </div>
                 </section>
+              
+                     
+                 
                 
 
-    </body>
+    </body><?php include '../recursos/php/footer.php';?>
 </html> 
 

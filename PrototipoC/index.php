@@ -68,7 +68,7 @@
           <img class="slider__img" src="recursos/IMG/slider3.jpg" alt="">
         </section>
         <section class="slider__section">
-          <img class="slider__img" src="recursos/IMG/slider4.jpg" alt="">
+          <img class="slider__img" src="recursos/IMG/slider2.jpg" alt="">
         </section>
       </div>
       <div class="btn-prev" id="btn-prev">&#60;</div>

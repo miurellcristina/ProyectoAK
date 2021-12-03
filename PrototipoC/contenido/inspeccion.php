@@ -56,14 +56,14 @@
         <section>
             <div class="con-p">
                 <div class="const"><img src="../recursos/IMG/1sp.png" alt=""></div>
-                <div class="const"><img src="../recursos/IMG/1se.png" alt=""></div>>
+                <div class="const"><img src="../recursos/IMG/1se.png" alt=""></div>
             </div><br><br>
             <h3  class="sub">Dos veces al año</h3>
             <div class="con-p">
-                <div clas="const-img"><img src="../recursos/IMG/2s1.png" alt=""></div>
-                <div clas="const-img"><img src="../recursos/IMG/2s4.png" alt=""></div>
-                <div clas="const-img"><img src="../recursos/IMG/2s2.png" alt=""></div>
-                <div clas="const-img"><img src="../recursos/IMG/2s3.png" alt=""></div>
+                <div class="const-img"><img src="../recursos/IMG/2s1.png" alt=""></div>
+                <div class="const-img"><img src="../recursos/IMG/2s4.png" alt=""></div>
+                <div class="const-img"><img src="../recursos/IMG/2s2.png" alt=""></div>
+                <div class="const-img"><img src="../recursos/IMG/2s3.png" alt=""></div>
             </div>
         </section>
     </body>

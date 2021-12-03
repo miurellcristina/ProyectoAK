@@ -1,3 +1,4 @@
+<?php include '../recursos/php/conexion.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -16,8 +17,7 @@
     </head>
     <body>
         <?php include '../recursos/php/encabezado.php';?>
-
-        <div class="cont-wrap">
+	        <div class="cont-wrap">
 		<div class="cont-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Escribenos</label>
 		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Contactanos</label>
@@ -46,7 +46,21 @@
 					</div>
 					<div class="group">
 						<label class="label">Estado:</label>
-						<input id="Estado" name="estado" autocomplete="off" type="text" class="input" required>
+						<?php
+							$sql = "SELECT * FROM estados";
+								if($resultado=mysqli_query($con,$sql)){
+									echo '<select required name="estado" id= "estado" class="input" >';
+									echo '<option selected="true" disabled="true">Seleccione</option>';
+										while($registro=mysqli_fetch_row($resultado)){
+											echo '<option value="'.$registro[0].'">'.$registro[1].'</option>';
+										}
+										
+										echo "</select>";
+								}
+								else{
+										echo "No se pudo ejecutar la consulta a la BD";
+								}
+						?>
 					</div>
 					<div class="group">
 						<label class="label">Ciudad:</label>
@@ -79,7 +93,19 @@
 			</div>
 		</div>
 	</div>
-</div>
-       
+</div><?php
+$sql = 'SELECT * FROM estados WHERE 2';
+    if($resultado=mysqli_query($con,$sql)){
+        while($registro=mysqli_fetch_row($resultado)){
+            echo '<option value="'.$registro[0].'">'.$registro[1].'</option>';
+            $estado=$registro[1];
+        }
+            
+            echo "</select>";
+    }
+    else{
+            echo "No se pudo ejecutar la consulta a la BD";
+    }?>
+  
   </body>
 </html>
