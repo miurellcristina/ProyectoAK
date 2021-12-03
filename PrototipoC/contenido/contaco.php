@@ -93,19 +93,6 @@
 			</div>
 		</div>
 	</div>
-</div><?php
-$sql = 'SELECT * FROM estados WHERE 2';
-    if($resultado=mysqli_query($con,$sql)){
-        while($registro=mysqli_fetch_row($resultado)){
-            echo '<option value="'.$registro[0].'">'.$registro[1].'</option>';
-            $estado=$registro[1];
-        }
-            
-            echo "</select>";
-    }
-    else{
-            echo "No se pudo ejecutar la consulta a la BD";
-    }?>
-  
+</div>
   </body>
 </html>

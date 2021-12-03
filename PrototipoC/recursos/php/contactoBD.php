@@ -38,7 +38,11 @@ if(mail($destinatario,"La empresa .$empresa. ha solicitado información adiciona
         $accion=mysqli_query($con,$sql);
         
         if($accion){
-            header ("location:../../index.php");
+            echo "<script>
+                        alert('Su mensaje se ha enviado correctamente, le responderemos a la brevedad');
+                        window.location.href='../../index.php';
+                </script>";
+            
 
         }
         else{
